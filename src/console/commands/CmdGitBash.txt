@@ -1,0 +1,18 @@
+CMD commands
+
+https://skimfeed.com/blog/windows-command-prompt-ls-equivalent-dir/
+
+-cd Desktop/ - change directory
+-ls --  list computer files
+-mkdir Folder ----  command is is used to create new directories
+cd ../ - go back
+
+
+
+---RUN JAVA Program----
+
+javac NameOfProgram.java
+java NameOfProgram
+javac -d target/ src/File.java -compiling in another folder
+jar cvf cost-calc.jar . -add all to jar archive
+$ javac -cp ".;cost-calc.jar" Program.java

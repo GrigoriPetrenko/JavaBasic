@@ -9,7 +9,8 @@ public class Program {
 
         tom.displayId();    // Id = 1
         bob.displayId();    // Id = 2
-        System.out.println(Person.counter); // 3
+        //System.out.println(Person.counter); // 3
+        System.out.println(Person.counter);
 
         // изменяем Person.counter
         Person.counter = 8;
@@ -20,9 +21,13 @@ public class Program {
 
         Person igor = new Person();
 
-        igor.displayId();
+        igor.displayId();// Id = 9--??????
 
+        System.out.println("The head length of Igor: " + Math.PI*Person.counter );
 
+                System.out.println(Operation.sum(45, 23));          // 68
+                System.out.println(Operation.subtract(45, 23));     // 22
+                System.out.println(Operation.multiply(4, 23));      // 92
 
     }
 

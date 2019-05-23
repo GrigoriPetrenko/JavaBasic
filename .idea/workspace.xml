@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4615d67d-65a2-4361-a58f-3257f52060f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/LearnJava/metanit/chapter_3/chapter_3_4/modificator_static/Math.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LearnJava/metanit/chapter_3/chapter_3_4/modificator_static/Operation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/console/commands/CmdGitBash.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/metanit/chapter_3/chapter_3_4/modificator_static/Math.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/metanit/chapter_3/chapter_3_4/modificator_static/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearnJava/metanit/chapter_3/chapter_3_4/modificator_static/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearnJava/metanit/chapter_3/chapter_3_4/modificator_static/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearnJava/metanit/chapter_3/chapter_3_4/modificator_static/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearnJava/metanit/chapter_3/chapter_3_4/modificator_static/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metanit/chapter_3/chapter_3_4/modificator_static/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metanit/chapter_3/chapter_3_4/modificator_static/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metanit/chapter_3/chapter_3_4/modificator_static/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metanit/chapter_3/chapter_3_4/modificator_static/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/console/commands/CmdGitBash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/console/commands/CmdGitBash.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/console/commands/CmdGitBash.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="357">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -43,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_4/Table.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -89,13 +80,13 @@
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_3/src/Box.java" />
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_3/readme.txt" />
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_3/src/CostCalculator.java" />
-        <option value="$PROJECT_DIR$/src/console/commands/CmdGitBash.txt" />
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_4/Program.java" />
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_4/Table.java" />
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_5/pom.xml" />
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_5/src/main/java/Program.java" />
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/colored/terminal/src/main/java/Program.java" />
         <option value="$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/colored/terminal/pom.xml" />
+        <option value="$PROJECT_DIR$/src/console/commands/CmdGitBash.txt" />
       </list>
     </option>
   </component>
@@ -363,15 +354,16 @@
       <workItem from="1558080918215" duration="1108000" />
       <workItem from="1558168726885" duration="1408000" />
       <workItem from="1558171154885" duration="1903000" />
-      <workItem from="1558450784807" duration="778000" />
+      <workItem from="1558450784807" duration="1501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28841000" />
+    <option name="totallyTimeSpent" value="29564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28791946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -582,13 +574,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/colored/terminal/src/main/java/Program.java" />
     <entry file="file://$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/colored/terminal/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/console/commands/CmdGitBash.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/marsel/lessons_1/maven/http/servlets/taskbox_4/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -600,6 +585,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/console/commands/CmdGitBash.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>

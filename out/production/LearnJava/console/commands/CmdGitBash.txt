@@ -16,3 +16,18 @@ java NameOfProgram
 javac -d target/ src/File.java -compiling in another folder
 jar cvf cost-calc.jar . -add all to jar archive
 $ javac -cp ".;cost-calc.jar" Program.java
+
+
+--init repository--
+git init - add repository
+
+--cinfigs--
+git config  --global user.name "NAME"
+git config  --global user.email mail@gmail.com
+git config --list OR C:\Users\USER_NAME\.gitconfig
+
+--add files--
+git add . ---add all
+git commit -a -m "commit"
+-- push in existing account --
+git push -u origin master

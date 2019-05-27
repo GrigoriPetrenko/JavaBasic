@@ -2,7 +2,7 @@ package metanit.chapter_2;
 
 public class bynarySearch {
 
-    public static class BinarySearch {
+    /*public static class BinarySearch {
 
         // has to return boxed integer in order to comfort to interface defined in the book
         private static Integer binarySearch(int[] list, int item) {
@@ -30,8 +30,8 @@ public class bynarySearch {
     
    System.out.println(binarySearch(myList, 3);
    System.out.println(binarySearch(myList, -1)); // null
-  }
-
+  }*/
+}
 
 //https://www.compilejava.net/
 //https://github.com/egonSchiele/grokking_algorithms/blob/master/01_introduction_to_algorithms/java/01_binary_search/src/BinarySearch.java

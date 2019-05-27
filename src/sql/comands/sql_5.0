@@ -1,0 +1,22 @@
+CREATE DATABASE grigory_lists;
+
+USE grigory_lists;
+
+CREATE TABLE doings_lists
+(
+    doings_name VARCHAR(20),
+    doings_type VARCHAR(20),
+    time_min CHAR(10)
+    );
+//the main type:VARCHAR, BLOB, INT, DEC, DATE, DATETIME.
+
+DESC doings_lists; //view table
+
+DROP TABLE doings_lists; //delete table
+
+INSERT INTO doings_lists
+                       (doings_name, doings_type, time_min)
+                       VALUES
+                       ('RUN','hobby','3434');
+
+SELECT * FROM doings_lists;

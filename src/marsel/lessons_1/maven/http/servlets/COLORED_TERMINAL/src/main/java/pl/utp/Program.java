@@ -1,4 +1,4 @@
-package pl.utp;
+/*package pl.utp;
 
 import com.diogonunes.jcdp.color.ColoredPrinter;
 import com.diogonunes.jcdp.color.api.Ansi.BColor;
@@ -15,4 +15,4 @@ class Program {
 		cp.println("Hello!");
 		cp.clear();
 	}
-}
+}*/

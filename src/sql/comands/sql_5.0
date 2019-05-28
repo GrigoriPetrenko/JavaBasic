@@ -17,6 +17,14 @@ DROP TABLE doings_lists; //delete table
 INSERT INTO doings_lists
                        (doings_name, doings_type, time_min)
                        VALUES
-                       ('RUN','hobby','3434');
+                       ('run','hobby','1312');
+//warning !!!!!!!!!       ('nothing','it\'s an example','001');
+//warning !!!!!!!!!   or    ('nothing','it''s an example too','001');
 
 SELECT * FROM doings_lists;
+SELECT * FROM doings_lists WHERE doings_list = 'hobby';
+SELECT * FROM doings_lists WHERE time_min > 2000;
+// 'VARCHAR', 'CHAR', 'BLOB', 'DATE', 'TIME' and DEC, INT
+//warning !!!!!!!!!          SELECT * FROM doings_lists WHERE doings_type = 'it\'s an example';
+SELECT doings_type, time_min FROM doings_lists WHERE time_min > 2000;
+......page 115 (and vs SELECT)

@@ -1,3 +1,4 @@
+----------chapter 1,2------------------
 CREATE DATABASE grigory_lists;
 
 USE grigory_lists;
@@ -32,3 +33,10 @@ SELECT * FROM doings_lists WHERE doings_name > 'A' AND doings_name <= 'R'; //???
 SELECT doings_type FROM doings_lists WHERE main = 'hobby' OR main = 'learning'; //main not working
 SELECT doings_name FROM doings_lists WHERE time_min IS NULL;
 SELECT doings_name FROM doings_lists WHERE time_min LIKE '%2';
+SELECT * FROM doings_lists WHERE doings_type IN ('hobby','learning');
+SELECT * FROM doings_lists WHERE doings_type NOT IN ('hobby','learning');
+SELECT * FROM doings_lists WHERE NOT time_min BETWEEN 1000 AND 3000;
+SELECT * FROM doings_lists WHERE time_min IS NOT NULL;
+
+----------chapter 3 ------------------
+

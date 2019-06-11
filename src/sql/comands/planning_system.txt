@@ -1,0 +1,11 @@
+--------TABLE WORK--------
+ID
+status
+realisation_time 
+cost_time - how many time need worker to realisation ID 
+
+
+-------TABLE WORKER ------------
+ID
+power_cof(coefficient) - the parameter which characterizes experience of worker
+status

@@ -39,4 +39,6 @@ SELECT * FROM doings_lists WHERE NOT time_min BETWEEN 1000 AND 3000;
 SELECT * FROM doings_lists WHERE time_min IS NOT NULL;
 
 ----------chapter 3 ------------------
-
+INSERT INTO clown_info VALUES ('karol', 'swiming');
+DELETE FROM clown_info WHERE activities = 'dance' and name = 'karol';
+page_179

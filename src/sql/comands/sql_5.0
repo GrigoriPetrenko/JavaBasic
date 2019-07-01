@@ -41,4 +41,7 @@ SELECT * FROM doings_lists WHERE time_min IS NOT NULL;
 ----------chapter 3 ------------------
 INSERT INTO clown_info VALUES ('karol', 'swiming');
 DELETE FROM clown_info WHERE activities = 'dance' and name = 'karol';
-page_179
+UPDATE doughut_ratings SET type = 'xxxxxx' WHERE type = 'yyyyyyyyy';
+UPDATE crown_info SET last_seen = 'xxxxxx' WHERE name = 'yyyyyyyyy' AND last_seen = "xxx";
+
+page_183

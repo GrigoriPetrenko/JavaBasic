@@ -43,5 +43,7 @@ INSERT INTO clown_info VALUES ('karol', 'swiming');
 DELETE FROM clown_info WHERE activities = 'dance' and name = 'karol';
 UPDATE doughut_ratings SET type = 'xxxxxx' WHERE type = 'yyyyyyyyy';
 UPDATE crown_info SET last_seen = 'xxxxxx' WHERE name = 'yyyyyyyyy' AND last_seen = "xxx";
+UPDATE drink_info SET cost = 3.5 WHERE name = 'yyyyyyyyy';
+UPDATE drink_info SET cost = cost + 1 WHERE name = 'yyyyyyyyy' OR name = 'zzzzz' OR name = 'MMMMMM';
 
-page_183
+page_191

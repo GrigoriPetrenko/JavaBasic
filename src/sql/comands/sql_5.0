@@ -12,6 +12,7 @@ CREATE TABLE doings_lists
 //the main type:VARCHAR, BLOB, INT, DEC, DATE, DATETIME.
 
 DESC doings_lists; //view table
+DESCRIBE doings_lists;
 
 DROP TABLE doings_lists; //delete table
 
@@ -48,4 +49,18 @@ UPDATE drink_info SET cost = cost + 1 WHERE name = 'yyyyyyyyy' OR name = 'zzzzz'
 
 
 ----------chapter 4 ------------------
-page_203
+
+SHOW CREATE TABLE my_contacts;
+
+CREATE TABLE doings_lists    -------page222----
+(
+    doings_id INT NOT NULL AUTO_INCREMENT,
+    doings_name VARCHAR(20),
+    doings_type VARCHAR(20),
+    time_min CHAR(10),
+    PRIMARY KEY (doings_id)
+    );
+    
+
+
+page_223

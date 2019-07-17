@@ -70,9 +70,15 @@ PRIMARY KEY (id)
 
  INSERT INTO your_table (id, first_name, last_name) VALUES (1, 'Marwel', 'Kapitan');
  
- ALTER TABLE my_contacts ADD COLIMN contact_id INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (contact_id);
+ ALTER TABLE doings_lists ADD COLUMN id INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (id);
  ALTER TABLE my_contacts ADD COLUMN cell_num VARCHAR(10) AFTER last_name; ------can use AFTER,BEFORE, FIFTH, SECOND, LAST------
  
+ ALTER TABLE doings_lists CHANGE COLUMN doings_name name VARCHAR(100);
+ ALTER TABLE doings_lists MODIFY COLUMN name VARCHAR(103);
  
+ SELECT name, doings_type FROM doings_lists;
+ SELECT doings_type, name FROM doings_lists;
  
-page_242
+ ALTER TABLE doings_lists DROP COLUMN start_date;
+ 
+page_257

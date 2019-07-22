@@ -48,7 +48,7 @@ UPDATE drink_info SET cost = 3.5 WHERE name = 'yyyyyyyyy';
 UPDATE drink_info SET cost = cost + 1 WHERE name = 'yyyyyyyyy' OR name = 'zzzzz' OR name = 'MMMMMM';
 
 
-----------chapter 4 ------------------
+----------chapter 4 5------------------
 
 SHOW CREATE TABLE my_contacts;
 
@@ -84,5 +84,6 @@ PRIMARY KEY (id)
  SELECT RIGHT(location, 2) FROM my_contacts;
  SELECT SUBSTRING_INDEX(location, ',', 1)  FROM my_contacts;
  
+ ----------chapter 6------------------
  
-page_260
+page_268

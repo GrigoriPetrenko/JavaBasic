@@ -85,5 +85,22 @@ PRIMARY KEY (id)
  SELECT SUBSTRING_INDEX(location, ',', 1)  FROM my_contacts;
  
  ----------chapter 6------------------
+  ALTER TABLE doings_lists ADD COLUMN time VARCHAR(50);
+ UPDATE doings_lists
+ SET time =
+    CASE
+    WHEN time_min = '3434' THEN 'good'
+    ELSE 'not good'
+ END;
  
-page_268
+ SELECT name, doings_type 
+ FROM doings_lists
+ ORDER BY name;       ---------ORDER BY name DESC;
+ 
+ SELECT name, SUM(time_min)
+ FROM doings_lists
+ GROUP BY name
+ ORDER BY SUM(time_min) DESC;
+ 
+ 
+page_299

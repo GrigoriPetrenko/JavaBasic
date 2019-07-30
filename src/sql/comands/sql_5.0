@@ -102,5 +102,12 @@ PRIMARY KEY (id)
  GROUP BY name
  ORDER BY SUM(time_min) DESC;
  
+ SELECT first_name, AVG(sales)    ---MIN,MAX(sales)
+FROM cookie_sales
+GROUP BY first_name;
+
+SELECT COUNT(sale_date)
+FROM cookie_sales;
  
-page_299
+ 
+page_303

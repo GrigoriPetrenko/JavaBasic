@@ -100,13 +100,13 @@ PRIMARY KEY (id)
  SELECT name, SUM(time_min)
  FROM doings_lists
  GROUP BY name
- ORDER BY SUM(time_min) DESC;
+ ORDER BY SUM(time_min) DESC; значения должны возвращаться по убыванию
  
- SELECT first_name, AVG(sales)    ---MIN,MAX(sales)
+SELECT first_name, AVG(sales)ссумирует все значения и делит на кол-во    ---MIN,MAX(sales)
 FROM cookie_sales
 GROUP BY first_name;
 
-SELECT COUNT(sale_date)
+SELECT COUNT(sale_date)-возвращает кол-во
 FROM cookie_sales;
  
  

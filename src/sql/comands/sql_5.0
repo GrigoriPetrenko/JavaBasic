@@ -109,5 +109,9 @@ GROUP BY first_name;
 SELECT COUNT(sale_date)-возвращает кол-во
 FROM cookie_sales;
  
- 
-page_303
+/* TO DO AN EXERCISE page_304 * answer 309 */
+
+----------chapter 7------------------
+SUBSTRING_INDEX(interests,',',1)
+
+p325

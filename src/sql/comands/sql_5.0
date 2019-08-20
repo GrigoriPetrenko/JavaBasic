@@ -114,4 +114,12 @@ FROM cookie_sales;
 ----------chapter 7------------------
 SUBSTRING_INDEX(interests,',',1)
 
-p325
+CREATE TABLE interests (
+id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+interest VARCHAR(50) NOT NULL,
+CONSTRAINT doings_lists_id_fk
+FOREIGN KEY (interest_id)
+REFERENCES doings_lists (id));
+
+
+p339

@@ -121,5 +121,15 @@ CONSTRAINT doings_lists_id_fk
 FOREIGN KEY (interest_id)
 REFERENCES doings_lists (id));
 
+----------chapter 8------------------
+CREATE TABLE diongs
+(
+id INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+doings_type varchar(20))
+AS
+SELECT doings_type FROM doings_lists
+GROUP BY doings_type
+ORDER BY doings_type;
 
-p371
+
+p388

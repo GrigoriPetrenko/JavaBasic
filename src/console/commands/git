@@ -12,11 +12,12 @@ git commit -a -m "commit"
 -- push in existing account --
 git push -u origin master
 
----------
+----update local branch-----
 gitk -a
 git fetch && git checkout prepare_skeleton
- git fetch origin
- 
+git fetch origin
+git pull
+
  # ----------------------
 # Git Aliases
 # ----------------------

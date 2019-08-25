@@ -1,0 +1,23 @@
+CREATE DATABASE toys_shop;
+
+USE toys_shop;
+
+CREATE TABLE boys
+(   boy_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    boy VARCHAR(20),
+    toy_id INT NOT NULL
+    );
+
+    DESC boys;
+
+ CREATE TABLE toys
+    (   toy_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        toy VARCHAR(20),
+        FOREIGN KEY (toy_id) REFERENCES boys (toy_id)
+        );
+
+
+   INSERT INTO books_list
+                       (book, author)
+                       VALUES
+                       ('Изучаем SQL','hobby','1312');

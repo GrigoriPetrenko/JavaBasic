@@ -14,3 +14,4 @@ CREATE TABLE books_list
                        (book, author)
                        VALUES
                        ('Изучаем SQL','hobby','1312');
+

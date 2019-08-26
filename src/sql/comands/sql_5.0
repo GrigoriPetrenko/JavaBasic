@@ -134,5 +134,9 @@ ORDER BY doings_type;
 SELECT * FROM doings_lists CROSS JOIN diongs;  - перекрестное соединение
 
 
+P408 ALTER; UPDATE 
 
-p394
+----------chapter 9------------------
+p414
+
+p410

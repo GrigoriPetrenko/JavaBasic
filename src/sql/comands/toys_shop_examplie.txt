@@ -12,12 +12,44 @@ CREATE TABLE boys
 
  CREATE TABLE toys
     (   toy_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        toy VARCHAR(20),
-        FOREIGN KEY (toy_id) REFERENCES boys (toy_id)
+        toy VARCHAR(20)
         );
 
+  DESC toys;
 
-   INSERT INTO books_list
-                       (book, author)
+
+
+   INSERT INTO boys
+                       (boy, toy_id)
                        VALUES
-                       ('Изучаем SQL','hobby','1312');
+                        ('Dewid','3'),
+                       ('Bobbi','5'),
+                       ('Biwer','2')
+                       ('Richi','1');
+
+ SELECT * FROM boys;
+
+   INSERT INTO toys
+                        (toy)
+             VALUES
+                        ('Ball '),
+                        ('Transformer'),
+                        ('Guitar'),
+                        ('Piano'),
+                        ('Bicycle')
+                        ;
+
+ SELECT boys.boy, boys.boy_id , toys.toy
+    FROM boys
+    NATURAL JOIN
+    toys;
+
+ SELECT b.boy_id, b.boy, b.toy_id, t.toy
+    FROM boys AS b NATURAL JOIN toys AS t
+    WHERE
+    b.boy IN ('Dewid', 'Marchin', 'Biwer');
+
+ SELECT b.boy_id, b.boy, b.toy_id, t.toy
+     FROM boys AS b NATURAL JOIN toys AS t
+     WHERE
+     b.boy = (SELECT boy FROM boys WHERE boy_id = 2) ;

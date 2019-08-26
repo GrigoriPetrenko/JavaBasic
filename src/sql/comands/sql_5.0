@@ -137,6 +137,6 @@ SELECT * FROM doings_lists CROSS JOIN diongs;  - перекрестное сое
 P408 ALTER; UPDATE 
 
 ----------chapter 9------------------
-p414
 
-p410
+
+p438

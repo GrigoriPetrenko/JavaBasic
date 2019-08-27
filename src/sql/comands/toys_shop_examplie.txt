@@ -17,6 +17,7 @@ CREATE TABLE boys
 
   DESC toys;
 
+  SHOW TABLES;
 
 
    INSERT INTO boys
@@ -60,8 +61,35 @@ CREATE TABLE boys
 
  SELECT b.boy_id, b.boy, t.toy_id,t.toy
      FROM boys b RIGHT OUTER JOIN toys t
-     WHERE b.toy_id = t.toy_id;
+     ON
+     b.boy_id = t.toy_id;
      
   SELECT b.boy_id, b.boy, t.toy_id,t.toy
      FROM boys b LEFT OUTER JOIN toys t
-     WHERE b.toy_id = t.toy_id;
+     ON
+      b.boy_id = t.toy_id;
+
+  SELECT boy FROM boys
+  UNION
+  SELECT toy FROM toys
+  ORDER BY boy;
+
+  SELECT COUNT(*) boy FROM boys;
+
+  CREATE VIEW toys_list AS SELECT toy FROM toys;
+  SELECT * FROM toys_list;
+  DROP VIEW toys_list;
+
+  SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');
+  Oracle : alter user root identified by NEW PASSWORD;
+
+  CREATE USER guest
+  IDENTIFIED BY 'guest';
+
+  GRANT SELECT ON toys_shop
+  TO guest;
+
+  REVOKE SELECT ON toys_shop
+    TO guest;
+
+    SELECT CURRENT_DATE; TIME or USER

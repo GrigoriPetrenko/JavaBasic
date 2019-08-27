@@ -59,5 +59,9 @@ CREATE TABLE boys
     ON b.toy_id = t.toy_id;
 
  SELECT b.boy_id, b.boy, t.toy_id,t.toy
-     FROM boys b NATURAL JOIN toys t
+     FROM boys b RIGHT OUTER JOIN toys t
+     WHERE b.toy_id = t.toy_id;
+     
+  SELECT b.boy_id, b.boy, t.toy_id,t.toy
+     FROM boys b LEFT OUTER JOIN toys t
      WHERE b.toy_id = t.toy_id;

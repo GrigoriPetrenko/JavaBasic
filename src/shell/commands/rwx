@@ -1,0 +1,12 @@
+rw------- 600
+rw-r--r-- 644
+rw-rw-r-w 666
+rwx------ 700
+rwxr-xr-x 755
+rwxrwxrwx 777
+rwx--x--x 711
+drwx------ 700
+drwxr-xr-x 755
+drwx--x--x 711
+
+chown

@@ -31,11 +31,14 @@ less
 
 Создать:
 mkdir Folder
+mkdir -p Folder1/Folder2
 touch FILE.txt
 
 Копирование и перемещение:
 cp WHAT WHERE -v
 cp -R WHAT WHERE
 rm WHERE WHAT
+rmdir Empty_Directory
+rm -R Every_Directory
 mv WHAT WHERE (move and rename)
 

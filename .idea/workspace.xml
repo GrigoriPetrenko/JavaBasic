@@ -4,10 +4,6 @@
     <list default="true" id="4615d67d-65a2-4361-a58f-3257f52060f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shell/commands/Shell.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shell/commands/Shell.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shell/commands/mv" beforeDir="false" afterPath="$PROJECT_DIR$/src/shell/commands/mv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shell/commands/rwx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shell/commands/rwx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sql/comands/sql_5.0" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/comands/sql_5.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sql/comands/toys_shop_examplie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/comands/toys_shop_examplie.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shell/commands/Shell.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="595">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/console/commands/git">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -417,12 +422,12 @@
       <workItem from="1567457110258" duration="1432000" />
       <workItem from="1567497137280" duration="3533000" />
       <workItem from="1567578341195" duration="6736000" />
-      <workItem from="1567675392148" duration="2604000" />
+      <workItem from="1567675392148" duration="4324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99381000" />
+    <option name="totallyTimeSpent" value="101101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -702,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/console/commands/git">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shell/commands/mv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -735,8 +733,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shell/commands/Shell.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="595">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/console/commands/git">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>

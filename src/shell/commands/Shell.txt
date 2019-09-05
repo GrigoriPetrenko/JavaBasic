@@ -22,3 +22,20 @@ sudo apt-get --purge remove NameOfProgram
 > - первый алфаветически после второго
 -n – строка длиной более 0
 -z – выражение имеет длину 0 ( [ $x = ”” ] )
+
+Просмотр:
+pwd - present working directory
+cat
+more
+less
+
+Создать:
+mkdir Folder
+touch FILE.txt
+
+Копирование и перемещение:
+cp WHAT WHERE -v
+cp -R WHAT WHERE
+rm WHERE WHAT
+mv WHAT WHERE (move and rename)
+

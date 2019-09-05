@@ -85,7 +85,7 @@ PRIMARY KEY (id)
  SELECT SUBSTRING_INDEX(location, ',', 1)  FROM my_contacts;
  
  ----------chapter 6------------------
-  ALTER TABLE doings_lists ADD COLUMN time VARCHAR(50);
+ ALTER TABLE doings_lists ADD COLUMN time VARCHAR(50);
  UPDATE doings_lists
  SET time =
     CASE
@@ -134,9 +134,3 @@ ORDER BY doings_type;
 SELECT * FROM doings_lists CROSS JOIN diongs;  - перекрестное соединение
 
 
-P408 ALTER; UPDATE 
-
-----------chapter 9------------------
-
-
-p453

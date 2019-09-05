@@ -10,3 +10,13 @@ drwxr-xr-x 755
 drwx--x--x 711
 
 chown
+
+sudo useradd -m USERNAME
+sudo cat /etc/paswd
+sudo cat /etc/shadow
+sudo passwd USERNAME
+sudo userdel -r USERNAME
+sudo groupadd NAME_OF_GROUP
+sudo usermod -aG NAME_OF_GROUP USERNAME
+sudo deluser USERNAME NAME_OF_GROUP
+

@@ -42,3 +42,19 @@ rmdir Empty_Directory
 rm -R Every_Directory
 mv WHAT WHERE (move and rename)
 
+Ссылки:
+ln -s "LINK_TO_DIRECTORY" "WHERE_SAVE_AND_NAME"
+cd WHERE_SAVE_AND_NAME
+
+Искать:
+find, wc, sort, cut
+grep -i linux ./*
+grep -E "[A-Za-z\.]*[A-Za-z\.]*.^Cm" Audi.html
+
+Перенаправление вывода и ввода:
+
+grep virtual-grigory /etc/* 2> errors.txt
+grep virtual-grigory /etc/* > withOutErrors.txt 2> errors_2.txt
+grep virtual-grigory /etc/* &> results.txt
+
+

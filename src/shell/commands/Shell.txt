@@ -58,3 +58,21 @@ grep virtual-grigory /etc/* > withOutErrors.txt 2> errors_2.txt
 grep virtual-grigory /etc/* &> results.txt
 
 
+Архивирование и компрессия данных:
+tar cf mytar.tar Folder1 -v
+tar tf mytar.tar
+tar xvf mytar.tar
+gzip mytar2.tar      ---->  tar cvzf myGzip.gz FILE_or_FOLDER
+gunzip mytar2.tar.gz ---->  tar xvf myGzip.gz FILE_or_FOLDER
+bzip2 mytar.tar      ---->  tar cvjf myGzip.bz2 FILE_or_FOLDER
+bunzip2 mytar.tar.bz2
+xz        ---->  tar cvJf myGzip.xz FILE_or_FOLDER
+unxz
+
+zip -r myZip.zip Folder2
+unzip myZip.zip
+
+Память и процессы:
+
+
+

@@ -9,7 +9,25 @@ drwx------ 700
 drwxr-xr-x 755
 drwx--x--x 711
 
-chown
+r = 4
+w = 2
+x = 1
+
+rwx - 7 ( 4 + 2 + 1)
+rw- - 6 ( 4 + 2 + 0)
+r-x - 5 ( 4 + 0 + 1)
+r-- - 4 ( 4 + 0 + 0)
+-wx - 3 ( 0 + 2 + 1)
+-w- - 2 ( 0 + 2 + 0)
+--x - 1 ( 0 + 0 + 1)
+--- - 0 ( 0 + 0 + 0)
+
+chmod ugo(user ) OR g-w OR ugo=r OR g+x,o+w file.txt
+          group
+          other
+
+sudo chown natalia example.txt  "change owner"
+sudo chgrp FAMILY example.txt
 
 sudo useradd -m USERNAME
 sudo cat /etc/paswd
@@ -20,3 +38,14 @@ sudo groupadd NAME_OF_GROUP
 sudo usermod -aG NAME_OF_GROUP USERNAME
 sudo deluser USERNAME NAME_OF_GROUP
 
+
+Типы аккаунтов и важные файлы:
+su natalia
+/etc/passwd
+/etc/shadow
+/etc/group
+whoami
+id
+who
+w
+last

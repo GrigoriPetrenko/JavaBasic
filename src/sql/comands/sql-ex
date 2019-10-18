@@ -1,5 +1,8 @@
 SELECT:
 1- SELECT model, speed, hd FROM PC WHERE price<500; 1
-2- SELECT DISTINCT maker FROM Product WHERE model IN ( SELECT model FROM Printer); 4
+2- SELECT DISTINCT maker FROM Product WHERE model IN ( SELECT model FROM Printer); 4 ?
 3 - SELECT model, ram, screen FROM Laptop WHERE price>1000 ORDER BY model; 2
+4 - SELECT * FROM Printer WHERE color='y'; 2
+5 - SELECT DISTINCT model, speed, hd FROM PC WHERE cd='12x' OR cd='24x' AND price<600 ORDER BY model; 3 ?
+    SELECT DISTINCT model, speed, hd FROM PC WHERE cd='12x' OR cd='24x' AND price<600 ORDER BY model
 

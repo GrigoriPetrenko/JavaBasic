@@ -7,6 +7,10 @@ https://skimfeed.com/blog/windows-command-prompt-ls-equivalent-dir/
 -mkdir Folder ----  command is is used to create new directories
 cd ../ - go back
 
+---kill process---
+tasklist
+taskkill /F /PID "pid_number"
+
 
 
 ---RUN JAVA Program----

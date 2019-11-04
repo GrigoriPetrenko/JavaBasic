@@ -25,6 +25,9 @@ sudo apt-get --purge remove NameOfProgram
 
 Просмотр:
 pwd - present working directory
+id - 
+last 
+whoami
 cat
 more
 less

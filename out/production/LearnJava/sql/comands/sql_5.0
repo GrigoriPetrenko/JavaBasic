@@ -1,0 +1,136 @@
+----------chapter 1,2------------------
+CREATE DATABASE grigory_lists;
+
+USE grigory_lists;
+
+CREATE TABLE doings_lists
+(
+    doings_name VARCHAR(20),
+    doings_type VARCHAR(20),
+    time_min CHAR(10)
+    );
+//the main type:VARCHAR, BLOB, INT, DEC, DATE, DATETIME.
+
+DESC doings_lists; //view table
+DESCRIBE doings_lists;
+
+DROP TABLE doings_lists; //delete table
+
+INSERT INTO doings_lists
+                       (doings_name, doings_type, time_min)
+                       VALUES
+                       ('run','hobby','1312');
+//warning !!!!!!!!!       ('nothing','it\'s an example','001');
+//warning !!!!!!!!!   or    ('nothing','it''s an example too','001');
+
+SELECT * FROM doings_lists;
+SELECT * FROM doings_lists WHERE doings_list = 'hobby';
+SELECT * FROM doings_lists WHERE time_min > 2000;
+// 'VARCHAR', 'CHAR', 'BLOB', 'DATE', 'TIME' and DEC, INT
+//warning !!!!!!!!!          SELECT * FROM doings_lists WHERE doings_type = 'it\'s an example';
+SELECT doings_type, time_min FROM doings_lists WHERE time_min > 2000;
+SELECT * FROM doings_lists WHERE doings_type = 'hobby' AND time_min > 1312;
+SELECT * FROM doings_lists WHERE doings_name > 'A' AND doings_name <= 'R'; //??????why "R" not included
+SELECT doings_type FROM doings_lists WHERE main = 'hobby' OR main = 'learning'; //main not working
+SELECT doings_name FROM doings_lists WHERE time_min IS NULL;
+SELECT doings_name FROM doings_lists WHERE time_min LIKE '%2';
+SELECT * FROM doings_lists WHERE doings_type IN ('hobby','learning');
+SELECT * FROM doings_lists WHERE doings_type NOT IN ('hobby','learning');
+SELECT * FROM doings_lists WHERE NOT time_min BETWEEN 1000 AND 3000;
+SELECT * FROM doings_lists WHERE time_min IS NOT NULL;
+
+----------chapter 3 ------------------
+INSERT INTO clown_info VALUES ('karol', 'swiming');
+DELETE FROM clown_info WHERE activities = 'dance' and name = 'karol';
+UPDATE doughut_ratings SET type = 'xxxxxx' WHERE type = 'yyyyyyyyy';
+UPDATE crown_info SET last_seen = 'xxxxxx' WHERE name = 'yyyyyyyyy' AND last_seen = "xxx";
+UPDATE drink_info SET cost = 3.5 WHERE name = 'yyyyyyyyy';
+UPDATE drink_info SET cost = cost + 1 WHERE name = 'yyyyyyyyy' OR name = 'zzzzz' OR name = 'MMMMMM';
+
+
+----------chapter 4 5------------------
+
+SHOW CREATE TABLE my_contacts;
+
+CREATE TABLE doings_lists    -------page222----
+(
+    doings_id INT NOT NULL AUTO_INCREMENT,
+    doings_name VARCHAR(20),
+    doings_type VARCHAR(20),
+    time_min CHAR(10),
+    PRIMARY KEY (doings_id)
+    );
+    
+CREATE TABLE your_table
+(id INT NOT NULL AUTO_INCREMENT,
+first_name VARCHAR(20),
+last_name VARCHAR(30),
+PRIMARY KEY (id)
+);
+
+ INSERT INTO your_table (id, first_name, last_name) VALUES (1, 'Marwel', 'Kapitan');
+ 
+ ALTER TABLE doings_lists ADD COLUMN id INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (id);
+ ALTER TABLE my_contacts ADD COLUMN cell_num VARCHAR(10) AFTER last_name; ------can use AFTER,BEFORE, FIFTH, SECOND, LAST------
+ 
+ ALTER TABLE doings_lists CHANGE COLUMN doings_name name VARCHAR(100);
+ ALTER TABLE doings_lists MODIFY COLUMN name VARCHAR(103);
+ 
+ SELECT name, doings_type FROM doings_lists;
+ SELECT doings_type, name FROM doings_lists;
+ 
+ ALTER TABLE doings_lists DROP COLUMN start_date;
+ 
+ SELECT RIGHT(location, 2) FROM my_contacts;
+ SELECT SUBSTRING_INDEX(location, ',', 1)  FROM my_contacts;
+ 
+ ----------chapter 6------------------
+ ALTER TABLE doings_lists ADD COLUMN time VARCHAR(50);
+ UPDATE doings_lists
+ SET time =
+    CASE
+    WHEN time_min = '3434' THEN 'good'
+    ELSE 'not good'
+ END;
+ 
+ SELECT name, doings_type 
+ FROM doings_lists
+ ORDER BY name;       ---------ORDER BY name DESC;
+ 
+ SELECT name, SUM(time_min)
+ FROM doings_lists
+ GROUP BY name
+ ORDER BY SUM(time_min) DESC; значения должны возвращаться по убыванию
+ 
+SELECT first_name, AVG(sales)ссумирует все значения и делит на кол-во    ---MIN,MAX(sales)
+FROM cookie_sales
+GROUP BY first_name;
+
+SELECT COUNT(sale_date)-возвращает кол-во
+FROM cookie_sales;
+ 
+/* TO DO AN EXERCISE page_304 * answer 309 */
+
+----------chapter 7------------------
+SUBSTRING_INDEX(interests,',',1)
+
+CREATE TABLE interests (
+id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+interest VARCHAR(50) NOT NULL,
+CONSTRAINT doings_lists_id_fk
+FOREIGN KEY (interest_id)
+REFERENCES doings_lists (id));
+
+----------chapter 8------------------
+CREATE TABLE diongs
+(
+id INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+doings_type varchar(20))
+AS
+SELECT doings_type FROM doings_lists
+GROUP BY doings_type
+ORDER BY doings_type;
+
+SELECT * FROM doings_lists CROSS JOIN diongs;  - перекрестное соединение
+
+

@@ -1,0 +1,95 @@
+CREATE DATABASE toys_shop;
+
+USE toys_shop;
+
+CREATE TABLE boys
+(   boy_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    boy VARCHAR(20),
+    toy_id INT NOT NULL
+    );
+
+    DESC boys;
+
+ CREATE TABLE toys
+    (   toy_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        toy VARCHAR(20)
+        );
+
+  DESC toys;
+
+  SHOW TABLES;
+
+
+   INSERT INTO boys
+                       (boy, toy_id)
+                       VALUES
+                        ('Dewid','3'),
+                       ('Bobbi','5'),
+                       ('Biwer','2')
+                       ('Richi','1');
+
+ SELECT * FROM boys;
+
+   INSERT INTO toys
+                        (toy)
+             VALUES
+                        ('Ball '),
+                        ('Transformer'),
+                        ('Guitar'),
+                        ('Piano'),
+                        ('Bicycle')
+                        ;
+
+ SELECT boys.boy, boys.boy_id , toys.toy
+    FROM boys
+    NATURAL JOIN
+    toys;
+
+ SELECT b.boy_id, b.boy, b.toy_id, t.toy
+    FROM boys AS b NATURAL JOIN toys AS t
+    WHERE
+    b.boy IN ('Dewid', 'Marchin', 'Biwer');
+
+ SELECT b.boy_id, b.boy, b.toy_id, t.toy
+     FROM boys AS b NATURAL JOIN toys AS t
+     WHERE
+     b.boy = (SELECT boy FROM boys WHERE boy_id = 2) ;
+
+ SELECT b.boy_id, b.boy, t.toy_id,t.toy
+    FROM boys b INNER JOIN toys t
+    ON b.toy_id = t.toy_id;
+
+ SELECT b.boy_id, b.boy, t.toy_id,t.toy
+     FROM boys b RIGHT OUTER JOIN toys t
+     ON
+     b.boy_id = t.toy_id;
+     
+  SELECT b.boy_id, b.boy, t.toy_id,t.toy
+     FROM boys b LEFT OUTER JOIN toys t
+     ON
+      b.boy_id = t.toy_id;
+
+  SELECT boy FROM boys
+  UNION
+  SELECT toy FROM toys
+  ORDER BY boy;
+
+  SELECT COUNT(*) boy FROM boys;
+
+  CREATE VIEW toys_list AS SELECT toy FROM toys;
+  SELECT * FROM toys_list;
+  DROP VIEW toys_list;
+
+  SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');
+  Oracle : alter user root identified by NEW PASSWORD;
+
+  CREATE USER guest
+  IDENTIFIED BY 'guest';
+
+  GRANT SELECT ON toys_shop
+  TO guest;
+
+  REVOKE SELECT ON toys_shop
+    TO guest;
+
+  SELECT CURRENT_DATE; TIME or USER

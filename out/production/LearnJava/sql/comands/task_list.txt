@@ -1,0 +1,17 @@
+CREATE DATABASE task_list;
+
+USE task_list;
+
+CREATE TABLE books_list
+(
+    id INT NOT NULL AUTO_INCREMENT,
+    book VARCHAR(20),
+    author VARCHAR(20),
+    PRIMARY KEY (doings_id)
+    );
+   
+   INSERT INTO books_list
+                       (book, author)
+                       VALUES
+                       ('Изучаем SQL','hobby','1312');
+

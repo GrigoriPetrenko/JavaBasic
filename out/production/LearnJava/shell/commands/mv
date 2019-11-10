@@ -1,0 +1,18 @@
+                                                                                                                            -------mv----------
+                                                                                                                            move and rename
+
+                                                                                                                          #!/bin/bush
+                                                                                                                          #Usage: mv [OPTION]... [-T] SOURCE DEST
+                                                                                                                          #  or:  mv [OPTION]... SOURCE... DIRECTORY
+                                                                                                                          #  or:  mv [OPTION]... -t DIRECTORY SOURCE...
+                                                                                                                          #Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
+
+                                                                                                                          #Mandatory arguments to long options are mandatory for short options too.
+                                                                                                                           # -f, --force                  do not prompt before overwriting
+                                                                                                                           #-i, --interactive            prompt before overwrite
+                                                                                                                           # -u, --update                 move only when the SOURCE file is newer
+                                                                                                                                                           than the destination file or when the
+                                                                                                                                                           destination file is missing
+                                                                                                                           # -v, --verbose                explain what is being done
+
+                                                                                                                          mv -f /home/virtual-grigory/Documents/Szkola/jankowalski.txt /home/virtual-grigory/Documents/Szkola/Polski/jankowalski.txt

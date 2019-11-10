@@ -1,0 +1,78 @@
+-----delete program---------
+sudo apt-get remove NameOfProgram
+sudo apt-get --purge remove NameOfProgram
+
+-----work with files---------
+./name_file.sh
+
+-----операторы файловой системы-----
+-d – каталог существует
+-f – файл существует и есть обычным файлом
+-r – файл можно читать
+-w – в файл можно записать
+-x – файл можно выполнить
+-----operacje arytmetyczne-----
+-eq / -ne – равен / не равен
+-lt / -le – меньше / меньше или равно
+-gt / -ge – больше / больше или равно
+-----operacje na łańcuchach znakowych (łańcuchy w ””!)-----
+= - равен
+!= - не равен
+< - первый алфаветически перед вторым
+> - первый алфаветически после второго
+-n – строка длиной более 0
+-z – выражение имеет длину 0 ( [ $x = ”” ] )
+
+Просмотр:
+pwd - present working directory
+cat
+more
+less
+
+Создать:
+mkdir Folder
+mkdir -p Folder1/Folder2
+touch FILE.txt
+
+Копирование и перемещение:
+cp WHAT WHERE -v
+cp -R WHAT WHERE
+rm WHERE WHAT
+rmdir Empty_Directory
+rm -R Every_Directory
+mv WHAT WHERE (move and rename)
+
+Ссылки:
+ln -s "LINK_TO_DIRECTORY" "WHERE_SAVE_AND_NAME"
+cd WHERE_SAVE_AND_NAME
+
+Искать:
+find, wc, sort, cut
+grep -i linux ./*
+grep -E "[A-Za-z\.]*[A-Za-z\.]*.^Cm" Audi.html
+
+Перенаправление вывода и ввода:
+
+grep virtual-grigory /etc/* 2> errors.txt
+grep virtual-grigory /etc/* > withOutErrors.txt 2> errors_2.txt
+grep virtual-grigory /etc/* &> results.txt
+
+
+Архивирование и компрессия данных:
+tar cf mytar.tar Folder1 -v
+tar tf mytar.tar
+tar xvf mytar.tar
+gzip mytar2.tar      ---->  tar cvzf myGzip.gz FILE_or_FOLDER
+gunzip mytar2.tar.gz ---->  tar xvf myGzip.gz FILE_or_FOLDER
+bzip2 mytar.tar      ---->  tar cvjf myGzip.bz2 FILE_or_FOLDER
+bunzip2 mytar.tar.bz2
+xz        ---->  tar cvJf myGzip.xz FILE_or_FOLDER
+unxz
+
+zip -r myZip.zip Folder2
+unzip myZip.zip
+
+Память и процессы:
+
+
+

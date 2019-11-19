@@ -9,7 +9,8 @@ SELECT:
 7 - select u.model, u.price from (select model, price from PC union select model, price from Laptop union select model, price from Printer) u join Product p on p.model = u.model where p.maker = 'B';
 8 - 
 9 - SELECT DISTINCT maker FROM  Product JOIN PC ON PC.model=Product.model WHERE PC.speed>=450; 5
-10 - ?????
+10 - SELECT model, price FROM Printer WHERE price=(SELECT MAX(price) From Printer); 8
 11 - SELECT AVG(speed) FROM Laptop WHERE price>1000; 4
 12 - SELECT AVG(PC.speed) FROM PC JOIN Product ON PC.model=Product.model WHERE Product.maker='A'; 3
+13 - SELECT Classes.class, Ships.name, Classes.country FROM Classes JOIN Ships ON Classes.class=Ships.class WHERE Classes.numGuns>=10; 
 

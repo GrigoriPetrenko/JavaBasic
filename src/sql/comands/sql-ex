@@ -7,5 +7,9 @@ SELECT:
 6 - SELECT DISTINCT Product.maker, Laptop.speed FROM Product JOIN Laptop ON Product.model=Laptop.model WHERE Laptop.hd>=10;  10
     SELECT DISTINCT Product.maker, Laptop.speed FROM Product, Laptop WHERE Laptop.hd >= 10;???????????
 7 - select u.model, u.price from (select model, price from PC union select model, price from Laptop union select model, price from Printer) u join Product p on p.model = u.model where p.maker = 'B';
-
+8 - 
+9 - SELECT DISTINCT maker FROM  Product JOIN PC ON PC.model=Product.model WHERE PC.speed>=450; 5
+10 - ?????
+11 - SELECT AVG(speed) FROM Laptop WHERE price>1000; 4
+12 - SELECT AVG(PC.speed) FROM PC JOIN Product ON PC.model=Product.model WHERE Product.maker='A'; 3
 

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4615d67d-65a2-4361-a58f-3257f52060f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/shell/commands/Shell.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shell/commands/Shell.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shell/commands/vi" beforeDir="false" afterPath="$PROJECT_DIR$/src/shell/commands/vi" afterDir="false" />
-    </list>
+    <list default="true" id="4615d67d-65a2-4361-a58f-3257f52060f6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shell/commands/Shell.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sql/comands/sql-ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -71,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/src/shell/commands/vi">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -79,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sql/comands/sql_5.0">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2177">
+            <state relative-caret-position="2312">
               <caret line="136" selection-start-line="136" selection-end-line="136" />
             </state>
           </provider>
@@ -142,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/shell/commands/rwx" />
         <option value="$PROJECT_DIR$/src/shell/commands/vi" />
         <option value="$PROJECT_DIR$/src/shell/commands/Shell.txt" />
+        <option value="$PROJECT_DIR$/src/sql/comands/sql-ex" />
       </list>
     </option>
   </component>
@@ -159,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,13 +193,14 @@
               <item name="LearnJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="comands" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,16 +451,18 @@
       <workItem from="1571218982196" duration="1049000" />
       <workItem from="1573384523660" duration="2729000" />
       <workItem from="1573936229100" duration="1425000" />
+      <workItem from="1574371940335" duration="227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129681000" />
+    <option name="totallyTimeSpent" value="129908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20939597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -472,7 +481,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -711,6 +720,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/shell/commands/Shell.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/console/commands/Cmd.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/console/commands/git">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -732,34 +755,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/console/commands/Cmd.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/shell/commands/file_permissions.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shell/commands/vi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shell/commands/file_permissions.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sql/comands/sql_5.0">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2177">
+        <state relative-caret-position="2312">
           <caret line="136" selection-start-line="136" selection-end-line="136" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shell/commands/Shell.txt">
+    <entry file="file://$PROJECT_DIR$/src/sql/comands/sql-ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
         </state>
       </provider>
     </entry>

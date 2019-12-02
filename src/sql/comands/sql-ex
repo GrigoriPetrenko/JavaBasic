@@ -1,11 +1,9 @@
-SELECT:
 1- SELECT model, speed, hd FROM PC WHERE price<500; 1
 2- SELECT DISTINCT maker FROM Product WHERE type='printer'; 8 ?
 3 - SELECT model, ram, screen FROM Laptop WHERE price>1000 ORDER BY model; 2
 4 - SELECT * FROM Printer WHERE color='y'; 2
 5 - SELECT DISTINCT model, speed, hd FROM PC WHERE (cd='12x' OR cd='24x') AND price<600; 15
-6 - SELECT DISTINCT Product.maker, Laptop.speed FROM Product JOIN Laptop ON Product.model=Laptop.model WHERE Laptop.hd>=10;  10
-    SELECT DISTINCT Product.maker, Laptop.speed FROM Product, Laptop WHERE Laptop.hd >= 10;???????????
+6 - SELECT DISTINCT Product.maker, Laptop.speed FROM Product JOIN Laptop ON Product.model=Laptop.model WHERE Laptop.hd>=10
 7 - select u.model, u.price from (select model, price from PC union select model, price from Laptop union select model, price from Printer) u join Product p on p.model = u.model where p.maker = 'B';
 8 - 
 9 - SELECT DISTINCT maker FROM  Product JOIN PC ON PC.model=Product.model WHERE PC.speed>=450; 5
@@ -15,8 +13,11 @@ SELECT:
 13 - SELECT AVG(PC.speed) FROM PC JOIN Product ON PC.model=Product.model WHERE Product.maker='A'
 14 -SELECT Classes.class, Ships.name, Classes.country FROM Classes JOIN Ships ON Classes.class=Ships.class WHERE Classes.numGuns>=10
 15 - SELECT hd FROM PC GROUP BY hd HAVING COUNT(hd)>=2
-
-19 - SELECT Product.maker, Laptop.screen FROM Product JOIN Laptop ON Product.model=Laptop.model
-
-
-
+16 - 
+17 -
+18 - 
+19 - SELECT Product.maker, AVG(Laptop.screen) AS AVscr FROM Product JOIN Laptop ON Product.model=Laptop.model GROUP BY Product.maker
+20 -
+21 - SELECT Product.maker, MAX(PC.price) AS MAX_PRICE FROM Product JOIN PC ON Product.model=PC.model GROUP BY Product.maker
+22 - 
+23 - SELECT speed, AVG(price) AS avgprice FROM PC WHERE speed>600 GROUP BY speed

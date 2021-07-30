@@ -22,3 +22,67 @@ jar cvf cost-calc.jar . -add all to jar archive
 $ javac -cp ".;cost-calc.jar" Program.java
 
 
+netstat
+netstat -ano
+nestat /?
+nestat help
+nestat -h
+
+ipconfig
+ipconfig /all
+ping wp.pl
+nslookup wp.pl
+
+tracert wp.pl
+pathping 8.8.8.8
+
+getmac
+
+HDD:
+DiskPart...
+-diskpart
+-detail disk
+-list partision
+-select partition 2
+-shrink desired=10240
+-create partition primary size=10240
+-format fs=ntfs quick
+-assign letter K
+
+Folders:
+
+
+md folder1 folder2 folder3
+tree
+
+cd folder1
+
+type nul>file.txt
+
+type nul>file1.txt
+type nul>file2.txt
+type nul>file3.txt
+del file.txt
+list
+dir
+cd..
+dir
+
+type nul>folder2\file4.txt
+type nul>folder2\file5.txt
+type nul>folder2\file6.txt
+cd folder2
+dir
+cd ..
+type nul>folder3\file7.txt
+type nul>folder3\file8.txt
+type nul>folder3\file9.txt
+tree
+cd..
+move "all\folder1" "files_from_folder_1"
+tree
+copy "all\folder3" "files_from_folder_3"
+
+del files_from_folder_3
+
+mkdir files_from_folder_3 | copy "all\folder3" "files_from_folder_3"

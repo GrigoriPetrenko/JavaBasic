@@ -60,3 +60,69 @@ alias gsts='git stash save'
 # ----------------------
 # Git log find by commit message
 function glf() { git log --all --grep="$1"; }
+  712  git init 
+  713  ls -la
+  714  git checkout -b master
+  715  git branch 
+  716  git branch -a
+  717  touch myfile.txt
+  718  git commit -am "new file first"
+  719  git branch 
+  720  git branch -a
+  721  git config user.name "Your Name"
+  722  git commit -am "new file first"
+  723  git add .
+  724  git commit -m "new file first"
+  725  git branch -a
+  726  git checkout -b new_br
+  727  touch new_one.txt
+  728* 
+  729  git commit -m "new one first"
+  730  history
+  731  git branch 
+  732  git log --oneline 
+  733  git merge --help
+  734  git checkout master 
+  735  git merge new_br 
+  736  git log --oneline 
+  737* 
+  738  vi myfile.txt 
+  739* 
+  740* 
+  741  git checkout master 
+  742  vi myfile.txt 
+  743  git add .
+  744  git commit -m "new one first master"
+  745  git branch 
+  746  git merge new_br 
+  747  cat myfile.txt 
+  748  git mergetool 
+  749  git mergetool myfile.txt
+  750  sudo apt install bc
+  751* 
+  752* 
+  753  git add .
+  754  git commit -m "true_master"
+  755  git log --oneline 
+  756  touch file2
+  757  git stash 
+  758  git add .
+  759  git stash 
+  760  git 
+  761  git status 
+  762  git unstash 
+  763  git log 
+  764  git reset 
+  765  git log --oneline 
+  766  git reset --help
+  767  git log --oneline
+  768  git log 
+  769  git diff
+  770  git diff -p 53a4cbb232aa1ffaf874e90ccf79c91e5bb23661
+  771  git diff -p 53a4cbb232aa1ffaf874e90ccf79c91e5bb23661 d2b49900ca34c5ce506d12c7358a8b43a967f71e
+  772  #git reset --soft 
+  773  git log --oneline 
+  774  git reset --soft 18087af
+  775  git log --oneline 
+  776  ls 
+  777  history > file_to_send

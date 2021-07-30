@@ -60,3 +60,16 @@ SELECT
 last_name, instr(last_name,'a',1,1)
 FROM
 hr.employees;
+
+Zadania:
+1. Wyświetl wszystkie nazwy regionów przyporządkowując je do nazw krajów. Wynik posortuj wg. Regionów rosnąco.
+2. Wyświetl lokalizacje oraz departamenty do nich przypisane w taki sposób aby wyświetlone zostały również te lokalizacje do których nie zostały przypisane żadne departamenty. “Puste” lokalizacje powinny zostać wyświetlone na końcu.
+3. Wyświetl nazwiska oraz płacę tych pracowników którzy są przełożonymi kogokolwiek.
+4. Wyświetl tych pracowników którzy zarabiają powyżej średniej w firmie.
+5. Wyświetl tych pracowników którzy pracują w departamencie “Finance” a jednocześnie zarabiają więcej niż średnia w całej firmie. Użyj w tym celu zapytania skorelowanego.
+6. Wyświetl różnicę pomiędzy najwyższymi a najniższymi zarobkami w departamencie “Finance”
+7. Wyświetl tych pracowników którzy zarabiają więcej od kogokolwiek kto pracuje w departamencie “Finance”
+8. Wyświetl wszystkich managerów
+9. Wyświetl nazwiska pracowników oraz nazwiska ich przełożonych
+10. Wyświetl nazwiska pracowników oraz nazwy departamentów w których pracują.
+11. Wyświetl nazwiska pracowników oraz nazwy regionów w których znajdują się departamenty w których pracują.
